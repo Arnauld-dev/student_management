@@ -1,0 +1,64 @@
+.allDetail{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+    place-items: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.detailStudent{
+    display: flex;
+    flex-direction: column;
+
+}
+input,select{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid  rgb(244, 214, 214);
+    border-radius: 5px;
+}
+.body1{
+    background-color: rgb(244, 214, 214);
+    
+}
+.detailParents{
+    display: flex;
+    flex-direction: column;
+
+}
+.loginAll{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 20px;
+}
+.logindetail{
+    display: flex;
+    flex-direction: column;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    margin-left: 100px;
+    height:40px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: rgb(0, 166, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.button:active{
+    
+    background-color: rgb(189, 192, 193);
+    
+}

@@ -1,0 +1,134 @@
+/* Sidebar Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-left {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background-color: #1a252f;
+    border-bottom: 2px solid #3498db;
+}
+
+.sidebar-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3498db;
+    margin: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu .menu-item {
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar-menu .menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 12px;
+}
+
+.menu-link:hover {
+    background-color: #34495e;
+    color: #3498db;
+    padding-left: 25px;
+}
+
+.menu-link .icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-link span {
+    flex: 1;
+}
+
+.sidebar-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1a252f;
+}
+
+.sidebar-submenu li {
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar-submenu li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-submenu a {
+    display: block;
+    padding: 12px 20px 12px 50px;
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-submenu a:hover {
+    background-color: #34495e;
+    color: #3498db;
+    padding-left: 55px;
+}
+
+.sidebar-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.sidebar-submenu.open {
+    max-height: 500px;
+}
+
+
+.menu-item.has-submenu > .menu-link::after {
+    content: '▼';
+    font-size: 12px;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-item.has-submenu.open > .menu-link::after {
+    transform: rotate(-180deg);
+}
+
+.menu-item.has-submenu > .menu-link {
+    cursor: pointer;
+}
+
+/* Layout avec sidebar */
+.page-with-sidebar {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content-with-sidebar {
+    margin-left: 250px;
+    flex: 1;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
