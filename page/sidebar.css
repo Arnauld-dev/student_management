@@ -175,4 +175,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+    text-decoration: none;
+}
+.h1 span{
+    font-size: 40px;
+    color: rgb(41, 227, 247);
+}
+.dashboard-header{
+    text-align: center;
 }

@@ -38,16 +38,19 @@
         ?>
         
         <div class="main-content-with-sidebar">
-            <h1>Add Notice</h1>
-            <form action="" method="post">
-                <label for="noticeTitle">Notice Title</label>
-                <input type="text" name="noticeTitle" id="noticeTitle">
-                <label for="noticefor">Notice for class</label>
-                <input type="text" id="noticefor" name="noticefor">
-                <label for="noticemessage">Notice Message</label>
-                <input type="text" name="noticemessage" name="noticemessage">
-                <button type="submit" name="submit">Add</button>
-            </form>
+            <div class="box">
+                <h1>Add Notice</h1>
+                <form action="" method="post">
+                    <label for="noticeTitle">Notice Title</label>
+                    <input type="text" name="noticeTitle" id="noticeTitle">
+                    <label for="noticefor">Notice for class</label>
+                    <input type="text" id="noticefor" name="noticefor">
+                    <label for="noticemessage">Notice Message</label>
+                    <input type="text" name="noticemessage" name="noticemessage">
+                    <button type="submit" name="submit">Add</button>
+                </form>
+            </div>
+            
         </div>
     </div>
 </body>

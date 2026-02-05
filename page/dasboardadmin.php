@@ -19,22 +19,22 @@ include 'dbconnection.php';
         </div>
        
         <div class="main-content-with-sidebar">
-                <div >
+                <div  class="dashboard-header">
                     <h1>Tableau de bord Administrateur</h1>
                     <p>Bienvenue sur le tableau de bord administrateur</p>
                 </div>
                 <div class="dashboard-container">
                     <div class="box-dashboard"> 
-                        <h1 class="h1">Total Student <span>10</span></h1>
+                        <h1 ><a href="admin_panel/student/displayStudent.php" class="h1"> Total Student <span>10</span></a></h1>
                     </div>
                     <div class="box-dashboard">
-                        <h1 class="h1">Total Classe <span>5</span></h1>
+                        <h1><a href="admin_panel/classe/displayclass.php" class="h1">Total Classe <span>5</span></a></h1>
                     </div>
                     <div class="box-dashboard">
-                        <h1 class="h1">Total Homework <span>2</span></h1>
+                        <h1><a href="admin_panel/homework/displayhomework.php" class="h1">Total Homework <span>2</span></a></h1>
                     </div>
                     <div class="box-dashboard">
-                        <h1 class="h1">Total Notice <span>2</span></h1>
+                        <h1 > <a href="admin_panel/notice/displaynotice.php" class="h1">Total Notice <span>2</span></a></h1>
                     </div>
                 </div>
                 <div class="statistics-section">

@@ -14,13 +14,12 @@ if(isset($_POST['submit'])){
             $sql="INSERT INTO homework(homeworktitle,homeworkfor,homeworkdescription,dateHomework) VALUES(?,?,?,?)";
             $stmt=$db->prepare($sql);
             $resultat=$stmt->execute([$homeworktitle,$classe,$description,$Date]);
-if($resultat){
-        echo "<script>alert('Homework added successfully')</script>";
-    };
-};
-     
-    };
-    
+            if($resultat){
+                    echo "<script>alert('Homework added successfully')</script>";
+                    };
+                };
+                
+                }; 
 };
 ?>
 <!DOCTYPE html>
