@@ -18,8 +18,8 @@
                     <span>Classe</span>
                 </a>
                 <ul class="sidebar-submenu">
-                    <li><a href="<?php echo isset($base_path) ? $base_path : ''; ?>admin_panel/student/addStudent.php">Ajouter Classe</a></li>
-                    <li><a href="<?php echo isset($base_path) ? $base_path : ''; ?>admin_panel/student/displayStudent.php">Afficher Classe</a></li>
+                    <li><a href="<?php echo isset($base_path) ? $base_path : ''; ?>admin_panel/classe/addclass.php">Ajouter Classe</a></li>
+                    <li><a href="<?php echo isset($base_path) ? $base_path : ''; ?>admin_panel/classe/displayclass.php">Afficher Classe</a></li>
                 </ul>
             </li>
             <li class="menu-item has-submenu">

@@ -52,72 +52,108 @@ if(isset($_POST['submit'])){
     <title>Document</title>
 </head>
 <body style="margin=80px;padding=0" class="body1">
-     <div class="page-with-sidebar">
-        <?php
-        $base_path = '../../';
-        include '../../sidebar.php';
-        ?>
-          <h1><?php echo"Add student";?></h1>
-                <form action="" method="post" enctype="multipart/form-data">
-                    <div class="allDetail">
+    <div class="page-with-sidebar">
+        <div class="sidebar">
+            <?php
+            $base_path = '../../';
+            include '../../sidebar.php';
+            ?>
+        </div>
+        <div class="add-student-form">
+            <h1>Add Student</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="allDetail">
                     <div class="detailStudent">
-                        <h3><?php echo"Student details";?></h3>
-                        <label for="studentname">Student Name</label>
-                        <input type="text" name="studentname" id="studentname">
+                        <h3>Student details</h3>
+                        
+                        <div class="form-group">
+                            <label for="studentname">Student Name</label>
+                            <input type="text" name="studentname" id="studentname" required>
+                        </div>
 
-                        <label for="studentemail">Student Email</label>
-                        <input type="email" name="studentemail" id="studentemail">
+                        <div class="form-group">
+                            <label for="studentemail">Student Email</label>
+                            <input type="email" name="studentemail" id="studentemail" required>
+                        </div>
 
-                        <label for="studentclass">Student Class</label>
-                        <input type="text" name="studentclass" id="studentclass">
+                        <div class="form-group">
+                            <label for="studentclass">Student Class</label>
+                            <input type="text" name="studentclass" id="studentclass" required>
+                        </div>
 
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value="">Gender</option>
-                            <option value="homme">Homme</option>
-                            <option value="femme">Femme</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="homme">Homme</option>
+                                <option value="femme">Femme</option>
+                            </select>
+                        </div>
 
-                        <label for="dob">Date of Birth</label>
-                        <input type="date" name="dob" id="dob">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" name="dob" id="dob" required>
+                        </div>
 
-                        <label for="studentid">Student ID</label>
-                        <input type="text" name="studentid" id="studentid">    
-                 </div>
-                  <div class="detailParents">
-                    <h3><?php echo"Parents details";?></h3>
-                    
-                    <label for="fatherName">Father's Name</label>
-                    <input type="text" name="fatherName" id="fatherName">
+                        <div class="form-group">
+                            <label for="studentid">Student ID</label>
+                            <input type="text" name="studentid" id="studentid" required>
+                        </div>
+                    </div>
 
-                    <label for="mothername">Mother's Name</label>
-                    <input type="text" name="mothername" id="mothername">
+                    <div class="detailParents">
+                        <h3>Parents details</h3>
+                        
+                        <div class="form-group">
+                            <label for="fatherName">Father's Name</label>
+                            <input type="text" name="fatherName" id="fatherName" required>
+                        </div>
 
-                    <label for="parentContact">Parent Contact</label>
-                    <input type="text" name="parentContact" id="parentContact">
+                        <div class="form-group">
+                            <label for="mothername">Mother's Name</label>
+                            <input type="text" name="mothername" id="mothername" required>
+                        </div>
 
-                    <label for="alternatecontact">Altenate Contact number</label>
-                    <input type="text" name="alternatecontact" id="alternatecontact">
+                        <div class="form-group">
+                            <label for="parentContact">Parent Contact</label>
+                            <input type="text" name="parentContact" id="parentContact" required>
+                        </div>
 
-                    <label for="address">Adress</label>
-                    <input type="text" name="address" id="address">
+                        <div class="form-group">
+                            <label for="alternatecontact">Alternate Contact number</label>
+                            <input type="text" name="alternatecontact" id="alternatecontact" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address" required>
+                        </div>
+                    </div>
                 </div>
-                </div>
+
                 <div class="loginAll">
-                    <div class="logindetail"> 
-                        <label for="logindetail">Login Details</label>
-                        <input type="text" name="logindetail" id="logindetail" style="width: 500px;height: 40px;">
+                    <div class="logindetail">
+                        <h3>Login Details</h3>
+                        <div class="form-group">
+                            <label for="logindetail">Login</label>
+                            <input type="text" name="logindetail" id="logindetail">
+                        </div>
                     </div>
                     <div class="password">
-                        <label for="pwd">Password</label>
-                        <input type="password" nma="pwd" id="pwd"  style="width: 500px;height: 40px;"> 
+                        <h3>&nbsp;</h3>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" name="pwd" id="pwd">
+                        </div>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="button">Add </button>
-                </form>
+
+                <button type="submit" name="submit" class="button">Add Student</button>
+            </form>
+        </div>
             
 
-        </div>
+    </div>
    
     
 </body>
