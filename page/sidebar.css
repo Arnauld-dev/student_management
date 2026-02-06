@@ -184,3 +184,8 @@
 .dashboard-header{
     text-align: center;
 }
+.deconnection{
+    text-decoration: none;
+    color: white;
+    margin-left: 6px;
+}

@@ -1,5 +1,28 @@
 <?php
+session_start();
+
 include 'dbconnection.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(isset($_POST['submit'])){
+        $email="admin@etu.com";
+        $password="admin123";
+        $inputEmail = $_POST['email'];
+        $inputPassword = $_POST['password'];
+
+    if ($inputEmail === $email && $inputPassword === $password) {
+        $_SESSION['admin_logged_in'] = true;
+        header("Location: dasboardadmin.php");
+        exit();
+    } else {
+        echo "<script>alert('Invalid email or password. Please try again.');</script>";
+    }
+
+    }
+
+   
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +49,7 @@ include 'dbconnection.php';
                 <p>Sign in to your account</p>
             </div>
 
-            <form class="login-form" method="POST" action="dasboardadmin.php">
+            <form class="login-form" method="POST" action="">
                 
                 <div class="form-group login-form-group">
                     <label for="email">Email Address</label>
@@ -38,7 +61,7 @@ include 'dbconnection.php';
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
 
-                <button type="submit" class="login-btn">Sign In</button>
+                <button type="submit" class="login-btn" name="submit">Sign In</button>
             </form>
 
             <div class="login-footer">

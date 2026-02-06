@@ -76,11 +76,13 @@
                 <a href="#" class="menu-link">
                     <span>Rapports</span>
                 </a>
+
                 <ul class="sidebar-submenu">
                     <li><a href="#">Étudiants</a></li>
                     <li><a href="#">Devoirs</a></li>
                 </ul>
             </li>
+            <a href="deconnection.php" class="deconnection">Deconnexion</a>
         </ul>
     </nav>
 </aside>

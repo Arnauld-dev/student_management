@@ -60,8 +60,8 @@ require_once __DIR__ ."/../../dbconnection.php";?>
                             echo "<td>" . htmlspecialchars($res['addresse']) . "</td>";
                             echo "<td>";
                             echo "<div class='action-buttons'>";
-                            echo "<button class='btn-edit' onclick=\"editStudent(" . $res['id'] . ")\">Edit</button>";
-                            echo "<button class='btn-delete' onclick=\"deleteStudent(" . $res['id'] . ")\">Delete</button>";
+                            echo "<a class='edit-button' href='editStudent.php?id=" . urlencode($res['id']) . "'>Edit</a>";
+                            echo "<a class='delete-button' href='deleteStudent.php?id=" . urlencode($res['id']) . "' onclick=\"return confirm('Are you sure you want to delete this student?');\">Delete</a>";
                             echo "</div>";
                             echo "</td>";
                             echo "</tr>";
