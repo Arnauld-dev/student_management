@@ -17,6 +17,7 @@ if(isset($_POST['submit'])){
     <title>Document</title>
 </head>
 <body>
+    
     <form action="" method="post">
         <label for="pageTitle">Page Title</label>
         <input type="text" name="pageTitle" id="pageTitle">
