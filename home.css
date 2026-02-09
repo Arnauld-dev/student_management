@@ -11,7 +11,7 @@ body {
 
 .main-content {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../image/frontiere-caracteres-outils-ecriture_23-2147847727.png') center/cover;
+                url('frontiere-caracteres-outils-ecriture_23-2147847727.avif') center/cover;
     min-height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ body {
 
 .main-content a {
     display: inline-block;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: #2563eb;
     color: white;
     padding: 12px 30px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ body {
     color: rgb(40, 40, 40);
     margin-bottom: 60px;
     padding-bottom: 40px;
-    border-bottom: 2px solid rgba(227, 62, 245, 0.3);
+    border-bottom: 2px solid rgba(11, 11, 11, 0.3);
 }
 
 .contact-header h1 {
@@ -112,7 +112,7 @@ body {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 500;
-    color: rgb(227, 62, 245);
+    color: rgb(11, 11, 11);
 }
 
 .contact-form {
@@ -136,7 +136,7 @@ body {
 .form-group input,
 .form-group textarea {
     padding: 12px 15px;
-    border: 1px solid rgba(227, 62, 245, 0.5);
+    border: 1px solid rgba(51, 50, 51, 0.5);
     border-radius: 5px;
     background: rgba(227, 62, 245, 0.05);
     color: rgb(40, 40, 40);
@@ -148,7 +148,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: rgb(227, 62, 245);
+    border-color: rgb(56, 56, 56);
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 10px rgba(227, 62, 245, 0.2);
 }
